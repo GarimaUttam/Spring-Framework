@@ -1,4 +1,4 @@
-package com.example.componentscan;
+package com.example.componentscan.xml;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

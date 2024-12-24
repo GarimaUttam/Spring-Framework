@@ -1,4 +1,4 @@
-package com.example.componentscan;
+package com.example.componentscan.xml;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
