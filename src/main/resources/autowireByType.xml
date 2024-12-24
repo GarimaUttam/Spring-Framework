@@ -5,7 +5,11 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
+<<<<<<< HEAD
     <bean id = "specification1" class="com.example.autowire.type.Specification">
+=======
+    <bean id = "specification" class="com.example.autowire.type.Specification">
+>>>>>>> 6580bd9 (autowiring by type)
         <property name="make" value="Toyota"/>
         <property name="model" value="Corolla"/>
     </bean>
