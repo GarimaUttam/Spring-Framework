@@ -4,21 +4,17 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- bean definitions here -->
-<<<<<<< HEAD
-    <bean id = "specification1" class="com.example.autowire.type.Specification">
-=======
-    <bean id = "specification" class="com.example.autowire.type.Specification">
->>>>>>> 6580bd9 (autowiring by type)
+
+    <bean id = "specification" class="com.example.autowire.constructor.Specification">
         <property name="make" value="Toyota"/>
         <property name="model" value="Corolla"/>
     </bean>
 
-<!--    <bean id = "specification1" class="com.example.autowire.type.Specification">-->
-<!--        <property name="make" value="Toyota1"/>-->
-<!--        <property name="model" value="Corolla1"/>-->
-<!--    </bean>-->
+    <bean id = "specification1" class="com.example.autowire.constructor.Specification">
+        <property name="make" value="Toyota1"/>
+        <property name="model" value="Corolla1"/>
+    </bean>
 
 
-    <bean id = "myCar" class ="com.example.autowire.type.Car" autowire="byType"  />
+    <bean id = "myCar" class ="com.example.autowire.constructor.Car" autowire="constructor"/>
 </beans>

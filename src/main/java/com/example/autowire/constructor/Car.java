@@ -1,13 +1,17 @@
 package com.example.autowire.constructor;
 
 public class Car {
-    private Specification specification1;
+    private Specification specification;
 
-    public void setSpecification1(Specification specification) {
-        this.specification1 = specification;
+    public Car(Specification specification) {
+        this.specification = specification;
     }
 
+//    public void setSpecification(Specification specification) {
+//        this.specification = specification;
+//    }
+
     public void displayDetails(){
-        System.out.println("Car Details: " + specification1.toString());
+        System.out.println("Car Details: " + specification.toString());
     }
 }
